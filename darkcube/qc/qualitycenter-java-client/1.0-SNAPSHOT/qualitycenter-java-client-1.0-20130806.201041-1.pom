@@ -28,11 +28,11 @@
     <distributionManagement>
         <repository>
             <id>repo</id>
-            <url>https://github.com/darkcube/darkcube-mvn-repo/raw/master/releases</url>
+            <url>https://github.com/darkcube/darkcube-mvn-repo/raw/master</url>
         </repository>
         <snapshotRepository>
             <id>snapshot-repo</id>
-            <url>https://github.com/darkcube/darkcube-mvn-repo/raw/master/snapshots</url>
+            <url>https://github.com/darkcube/darkcube-mvn-repo/raw/master</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -40,7 +40,7 @@
         <profile>
             <id>local-deploy</id>
             <properties>
-                <altDeploymentRepository>snapshot-repo::default::file:${basedir}/../darkcube-mvn-repo/snapshots</altDeploymentRepository>
+                <altDeploymentRepository>snapshot-repo::default::file:${basedir}/../darkcube-mvn-repo</altDeploymentRepository>
             </properties>
         </profile>
     </profiles>
